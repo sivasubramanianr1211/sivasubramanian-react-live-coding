@@ -77,6 +77,7 @@ function PokeDex() {
       };
       apiCallFunc();
     }, 500);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // this func is to open the modal popup for the selected pokemon
@@ -220,7 +221,7 @@ function PokeDex() {
                 data-testid="pokemon-name"
                 key={index}
                 onClick={() => handleClick(pokemon)}
-                className={Styles['list-pokemon']}
+                className={Styles["list-pokemon"]}
               >
                 {`${pokemon.name.charAt(0).toUpperCase()}${pokemon.name.slice(
                   1
