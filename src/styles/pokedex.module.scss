@@ -1,0 +1,77 @@
+@import "theme";
+@import "mixins";
+
+.header-text {
+  @include font-size($primary-header-font);
+}
+
+.close-icon {
+  @include font-size($primary-base-font);
+  margin: 0px 0px 0px 10px;
+  @include cursor-pointer();
+}
+
+.input-field-data {
+  @include input-field(300px, 30px);
+  @include border-radius($secondary-padding);
+}
+
+.select-field-data {
+  height: 44px;
+  @include cursor-pointer();
+  @include border-radius($secondary-padding);
+}
+
+.pokemon-container {
+  border: 2px solid white;
+  padding: 10px 50px;
+  width: 200px;
+  margin-bottom: 5px;
+  justify-content: center;
+  @include border-radius($primary-padding);
+  text-align: left;
+  margin: 15px auto;
+}
+
+.pokemon-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.pokemon-th {
+  padding: 8px;
+  border: 1px solid;
+}
+
+.download-icon {
+  @include cursor-pointer();
+  background-color: $secondary-color;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  @include border-radius($secondary-padding);
+}
+
+.pagination {
+  @include cursor-pointer();
+  @include display-flex();
+  gap: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+.modal-header {
+  @include font-size(18px);
+  @include display-flex();
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-pokemon {
+  @include cursor-pointer();
+}
+.list-pokemon:hover {
+  color: yellow;
+}

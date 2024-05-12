@@ -1,0 +1,34 @@
+@import "theme";
+@import "mixins";
+
+.title-text {
+  @include font-size($primary-base-font);
+}
+
+.error-text {
+  @include font-size($secondary-base-font);
+  color: $danger-text-color;
+  margin-top: $primary-padding;
+}
+
+.input-field-data {
+  @include input-field(300px, 30px);
+  @include border-radius($secondary-padding);
+}
+
+.pokemon-logo {
+  height: 40vmin;
+  pointer-events: none;
+  @media (prefers-reduced-motion: no-preference) {
+    animation: pokemon-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes pokemon-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,23 @@
+@mixin font-size($fontsize) {
+  font-size: $fontsize;
+}
+
+@mixin input-field($width, $height) {
+  width: $width;
+  height: $height;
+  cursor: pointer;
+  padding: 5px;
+}
+
+@mixin border-radius($border-radius) {
+  border-radius: $border-radius;
+}
+
+@mixin display-flex() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin cursor-pointer() {
+  cursor: pointer;
+}
